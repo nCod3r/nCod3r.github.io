@@ -1,64 +1,46 @@
-<!DOCTYPE html><html class=''>
-<head>
-<style >
-. {
-  box-sizing: border-box;
-  margin: 0 ;
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Gomix!</title>
+    <meta name="description" content="A cool thing made with Gomix">
+    <link id="favicon" rel="icon" href="https://gomix.com/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        A Dream of the Future
+      </h1>
+    </header>
 
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 1rem;
-}
-
-.responsive-image {
-  max-width: 100%;
-}
-.cell img {
-  display: block;
-}
-@media screen and (min-width: 600px){
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .cell {
-    width:50%;
-  }
-}
-@media screen and (min-width: 1000px){
-  .cell {
-    width:calc (100%/3);
-  }
-}
-.cell {
-  margin: 1rem;
-}
-
-@media screen and (min-width: 600px){
-  .cell {
-    width: calc(50% - 2rem);
-  }
-}
-@media screen and (min-width: 1000px){
-  .cell{
-    width: calc(33.3333% - 2rem);
-  }
-}</style></head><body>
+    <main>
+      <p class="bold">Oh hi,</p>
+      <p>Tell me your hopes and dreams:</p>
+      <form>
+        <input type="text" maxlength="100" placeholder="Dreams!">
+        <button type="submit">Submit</button>
+      </form>
 <div class="container">
-  <div class="grid">
-    <div class="cell">
-      <img src="http://placehold.it/800x800" class="responsive-image">
-    </div>
-    <div class="cell">
-      <img src="http://placehold.it/800x800" class="responsive-image">
-    </div>
-    <div class="cell">
-      <img src="http://placehold.it/800x800" class="responsive-image">
-    </div>
-  </div>
+      <section class="dreams grid">
+        <ul id="dreams" class="cell>
+	      <img src="http://placehold.it/800x800" class="responsive-image">
+        </ul>
+      </section>
 </div>
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-</body></html>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
